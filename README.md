@@ -27,7 +27,7 @@ But now that that's out of the way, it's time to talk **features!**
 | Command Highlighting | No | 0% |
 | File Conflict Selection | No | 0% |
 | Shell Selection | No | 0% |
-| Running Lines of Python | No | 0% |
+| Running Lines of Python | No | 100% |
 
 ## Installation
 ### On Windows
