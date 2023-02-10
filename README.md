@@ -23,7 +23,7 @@ But now that that's out of the way, it's time to talk **features!**
 ## Planned features
 |Feature | In Development | How Complete|
 |--------|----------------|-------------|
-| Tab Completion | No | 0% |
+| Tab Completion | No | 100% |
 | Command Highlighting | No | 0% |
 | File Conflict Selection | No | 100% |
 | Shell Selection | No | 100% |
