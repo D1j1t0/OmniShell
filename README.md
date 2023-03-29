@@ -24,7 +24,7 @@ But now that that's out of the way, it's time to talk **features!**
 |Feature | In Development | How Complete|
 |--------|----------------|-------------|
 | Tab Completion | No | 100% |
-| Command Highlighting | No | 0% |
+| Command Highlighting | No | 100% |
 | File Conflict Selection | No | 100% |
 | Shell Selection | No | 100% |
 | Running Lines of Python | No | 100% |
