@@ -1,3 +1,5 @@
+from prompt_toolkit.styles import Style
+
 info = """###########
 #Omnishell#
 ###########
@@ -12,6 +14,10 @@ logo = """[yellow]   ____  __  ____   ___________ __  __________    __
 / /_/ / /  / / /|  // / ___/ / __  / /___/ /___/ /___
 \____/_/  /_/_/ |_/___//____/_/ /_/_____/_____/_____/"""
 
-prompt = """[yellow]
+style = Style.from_dict({
+    '': 'ansiyellow'
+})
+
+prompt = """
 /OMNISHELL
 \_"""

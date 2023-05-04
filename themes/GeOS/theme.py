@@ -1,3 +1,5 @@
+from prompt_toolkit.styles import Style
+
 info = """######
 #GeOS#
 ######
@@ -18,4 +20,8 @@ logo = """[yellow]      ___           ___           ___           ___
     \  \::/       \  \:\        \  \::/       \  \::/
      \__\/         \__\/         \__\/         \__\/"""
 
-prompt = """[yellow][GeOS}-{"""
+style = Style.from_dict({
+    '': 'ansiyellow'
+})
+
+prompt = """[GeOS}-{"""

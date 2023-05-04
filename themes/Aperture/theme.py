@@ -1,3 +1,5 @@
+from prompt_toolkit.styles import Style
+
 info = """##########
 #Aperture#
 ##########
@@ -27,5 +29,9 @@ logo = """[blue]             .,-:;//;:=,
          ,:+$+-,/H#MMMMMMM@- -,
                =++%%%%+/:-."""
 
-prompt = """[blue]
+style = Style.from_dict({
+    '': 'ansiblue'
+})
+
+prompt = """
 \\"""

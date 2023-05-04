@@ -1,11 +1,22 @@
-#this runs your .omnirc file
+#!/usr/bin/env python3
+
+import os
+
+#Changes Current directory to the OmniShell
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+#Creates .omnirc.py if it doesn't exist
+if os.path.isfile("./.omnirc.py") == False:
+    f = open(".omnirc.py", "w")
+    f.close()
+
+#This runs your .omnirc file
 exec(open('.omnirc.py').read())
 
 #This section imports the dependent libraries
 import sys
 import subprocess
 import os
-import theme
 import options
 from rich.console import Console
 from rich.prompt import Prompt as prompt
@@ -13,8 +24,16 @@ import shutil
 from importlib import reload
 from pathlib import Path
 import time
+from prompt_toolkit import prompt
+from prompt_toolkit import PromptSession
+from prompt_toolkit.history import FileHistory
+from prompt_toolkit.completion import NestedCompleter
+from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
+from prompt_toolkit.validation import Validator
+from prompt_toolkit.styles import Style
+import theme
 
-#defines the login sequence
+#Defines the login sequence
 def login():
     f = open("password.txt", "r")
     lgin = (f.read())
@@ -22,7 +41,7 @@ def login():
     usr = (usr + "\n")
     pss = input("Now enter your Password: ")
     usrpss = (usr + pss)
-    if lgin == usrpss:
+    if str(lgin) == str(usrpss):
         print("Correct!")
     else:
         print("Incorrect, try again!")
@@ -37,7 +56,7 @@ if options.dologo == True:
 stpcmplt = (os.path.isfile("./password.txt"))
 
 #This section does the main setup
-if stpcmplt == (bool(False)):
+if stpcmplt == False and options.dologin == True:
     usrnm = input("Please assign a Username: ")
     psswrd = input("Please assign a Password: ")
     usrnm = (usrnm + "\n")
@@ -47,9 +66,10 @@ if stpcmplt == (bool(False)):
     f.write(lgn)
     f.close()
     print("Setup complete")
-    exec(open('prompt.py').read())
 else:
-    #calls the login sequence
+    #Calls the login sequence
     if options.dologin == True:
         login()
-    exec(open('prompt.py').read())
+
+#Runs the prompt file
+exec(open('prompt.py').read())
