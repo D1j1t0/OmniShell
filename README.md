@@ -20,18 +20,10 @@ But now that that's out of the way, it's time to talk **features!**
 - Python 3
 - [Rich](https://github.com/Textualize/rich)
 
-## Planned features
-|Feature | In Development | How Complete|
-|--------|----------------|-------------|
-| Tab Completion | No | 100% |
-| Command Highlighting | No | 100% |
-| File Conflict Selection | No | 100% |
-| Shell Selection | No | 100% |
-| Running Lines of Python | No | 100% |
-
 ## Installation
 ### On Windows
 The basic installation on Windows is basically the same as on any other operating system, simply download the latest release zip and extract it, then run `boot.py`. However if you don't want to have to run the Python file every time you want to use Omnishell there are many workarounds depending on your terminal.
+
 #### If you use Windows Terminal:
 If you use Windows Terminal the process is quite simple:
 1. Open Windows Terminal and open the settings tab using the menu or by pressing `CTRL+,`
