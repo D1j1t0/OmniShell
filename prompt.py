@@ -79,7 +79,7 @@ def main(cmdno, theme, os):
                 os.startfile(lnk_path)
 
             #If input begins with "p! " run as python code
-            if cmdno[0:3] == ("p! "):
+            elif cmdno[0:3] == ("p! "):
                 exec(cmdno[3:])
 
             #If input begins with "b! " run as bash
