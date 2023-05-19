@@ -19,6 +19,7 @@ But now that that's out of the way, it's time to talk **features!**
 ## Requirements
 - Python 3
 - [Rich](https://github.com/Textualize/rich)
+- [Python Prompt Toolkit](https://github.com/prompt-toolkit/python-prompt-toolkit)
 
 ## Installation
 ### On Windows
